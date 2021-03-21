@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node ./node_modules/sass/sass.js style.sass style.css && ts-node src/create.ts",
+    "build": "sass style.sass style.css && ts-node src/create.ts",
     "dev": "nodemon"
   },
   "keywords": [],
