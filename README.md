@@ -5,7 +5,7 @@ Curriculum vitae generator
 ## Usage
 
 ```bash
-$ git clone git@github.com:olesla/cv.git
+$ git clone git@github.com:olesla/CV.git
 $ cd cv
 $ npm install
 $ cp data.example.json data.json
