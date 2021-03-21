@@ -1,0 +1,6 @@
+{
+  "watch": ["src", "data.json", "template.html", "style.sass"],
+  "ext": "ts,json",
+  "ignore": ["src/**/*.spec.ts"],
+  "exec": "node ./node_modules/sass/sass.js style.sass style.css && ts-node ./src/create.ts"
+}

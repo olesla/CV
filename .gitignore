@@ -1,0 +1,7 @@
+package-lock.json
+node_modules
+dist
+cv.pdf
+style.css
+style.css.map
+.vs

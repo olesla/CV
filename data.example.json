@@ -1,0 +1,67 @@
+{
+  "title": "Your title (IE Fullstack Developer)",
+  "personalia": {
+    "firstName"  : "John",
+    "lastName"   : "Johnson",
+    "dateOfBirth": "01.01.1980",
+    "address"    : "Your full address",
+
+    "contact": {
+      "phone": "+47 00 00 00 00",
+      "email": "john@johnson.com"
+    }
+  },
+
+  "links": [
+    "https://relevant-link.com"
+  ],
+  "skills": [
+    "skill-1",
+    "skill-2",
+    "skill-3",
+    "skill-4",
+    "skill-5",
+    "skill-6"
+  ],
+
+  "experience": [
+    {
+      "start"  : "2021",
+      "end"    : "current",
+      "company": "Your current company",
+      "title"  : "Your current title",
+      "city"   : "City"
+    },
+    {
+      "start"  : "2014",
+      "end"    : "2019",
+      "company": "Company 1",
+      "title"  : "Some title",
+      "city"   : "City"
+    }
+  ],
+
+  "education": [
+    {
+      "start" : "2009",
+      "end"   : "2015",
+      "school": "School title",
+      "course": "Course title",
+      "city"  : "City"
+    },
+    {
+      "start" : "2008",
+      "end"   : "2009",
+      "school": "School title",
+      "course": "Course title",
+      "city"  : "City"
+    }
+  ],
+
+  "projects": [
+    {
+      "title": "Project title",
+      "description": "Write a description for the project"
+    }
+  ]
+}

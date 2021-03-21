@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{personalia.firstName}} {{personalia.lastName}}</title>
+</head>
+<body>
+
+  <div class="row header">
+    <div class="flex flex-center">
+      <img src="data:image/jpeg;base64,{{img}}">
+    </div>
+    <div>
+      <div>
+        <h1>{{personalia.firstName}} {{personalia.lastName}}</h1>
+      </div>
+      <div><strong>{{title}}</strong></div>
+      <div class="mb-1">{{personalia.dateOfBirth }}</div>
+      <div>
+        <i class="fa fa-fw mr-1 fa-location-arrow"></i>
+        {{personalia.address}}
+      </div>
+      <div>
+        <i class="fa fa-fw mr-1 fa-mobile"></i>
+        {{personalia.contact.phone}}
+      </div>
+      <div>
+        <i class="fa fa-fw mr-1 fa-envelope"></i>
+          {{personalia.contact.email}}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-title">
+      Skills
+    </div>
+    <div>
+      {{#each skills}}
+        <span class="mr-1">{{this}}</span>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-title">
+      Links
+    </div>
+    <div>
+      {{#each links}}
+        <div><a href="{{this}}">{{this}}</a></div>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-title">
+      Experience
+    </div>
+    <div>
+      {{#each experience}}
+        <div class="pb-1">
+          <div class="flex flex-space-between">
+            <div class='text-bold'>{{this.company}}</div>
+            <div class="text-dimmed">{{this.start}} - {{this.end}}</div>
+          </div>
+          <div class="flex flex-space-between">
+            <div>{{this.title}}</div>
+            <div>{{this.city}}</div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-title">
+      Education
+    </div>
+    <div>
+      {{#each education}}
+        <div class="pb-1">
+          <div class="flex flex-space-between">
+            <div class='text-bold'>{{this.school}}</div>
+            <div class='text-dimmed'>{{this.start}} - {{this.end}}</div>
+          </div>
+          <div class="flex flex-space-between">
+            <div>{{this.course}}</div>
+            <div>{{this.city}}</div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-title">
+      Projects
+    </div>
+    <div>
+      {{#each projects}}
+        <div class="pb-1">
+          <div class="flex flex-space-between">
+            <div class='text-bold'>{{this.title}}</div>
+          </div>
+          <div>{{this.description}}</div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+
+</body>
+</html>

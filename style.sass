@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway')
+
+$color-light: #ffffff
+$color-dark: #2d3142
+$color-medium: #4f5d75
+$color-title: #415a77
+
+html
+  -webkit-print-color-adjust: exact
+
+body
+  font-family: 'Raleway', sans-serif
+  font-size: 14px
+  background-color: $color-light
+  color: $color-dark
+  margin: 0
+  padding: 0
+
+a
+  color: #155b9c
+  text-decoration: none
+
+.header
+  background-color: #343a40
+  color: $color-light
+
+img
+  border-radius: 999px
+  width: 100px
+  height: 100px
+  margin-top: 20px
+  border: 2px solid $color-light
+
+.row-title
+  color: $color-title
+  padding-left: 0.6rem
+
+.row
+  display: grid
+  grid-template-columns: 1fr 4fr
+  padding: 1rem
+.row-title
+  vertical-align: top
+  font-weight: bold
+
+.bg-dark
+  color: $color-light
+  background-color: $color-dark
+
+.pb-1
+  padding-bottom: 1rem
+
+.mr-1
+  margin-right: 0.5rem
+.mb-1
+  margin-bottom: 0.5rem
+
+.text-title
+  color: $color-title
+.text-bold
+  font-weight: bold
+.text-dimmed
+  color: $color-medium
+
+.flex
+  display: flex
+.flex-space-between
+  justify-content: space-between
+.flex-center
+  justify-content: center
+  align-items: center
